@@ -46,7 +46,8 @@ $(function () {
     });
     // It is very important that this does NOT point to a 301 redirect url like `oecdbetterlifeindex.org`
     // without the `www` because (Mobile) Safari and IE lose everything after the hash.
-    var url = $(this).attr('href') + sliderValues;
+    var url = $(this).attr('href') + sliderValues ;
+    //window.open(url,'_blank');
     window.location = url;
     e.preventDefault();
     e.stopPropagation();
